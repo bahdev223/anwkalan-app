@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anw Kalan — Télécharger l'application Android</title>
+<meta name="description" content="Cours, révisions et N'kalan sur votre téléphone. Les leçons téléchargées s'ouvrent sans connexion.">
+
+<!--
+  Les balises Open Graph décident de ce que WhatsApp, Facebook et Messenger
+  affichent quand quelqu'un colle ce lien. Sans elles, le message n'est
+  qu'une adresse nue : personne ne clique.
+
+  `og:image` doit être une URL ABSOLUE. Les moteurs d'aperçu ne sont pas des
+  navigateurs — ils ne résolvent pas les chemins relatifs, et l'image
+  disparaîtrait silencieusement de la carte.
+
+  1200x630 est le format de la grande carte. Un logo carré serait réduit à
+  une vignette de la taille d'un timbre à côté du texte.
+-->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Anw Kalan">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Anw Kalan — Application Android">
+<meta property="og:description" content="Cours, révisions et N'kalan sur votre téléphone. Les leçons téléchargées s'ouvrent sans connexion.">
+<meta property="og:url" content="https://bahdev223.github.io/anwkalan-app/">
+<meta property="og:image" content="https://bahdev223.github.io/anwkalan-app/apercu-partage.png">
+<meta property="og:image:secure_url" content="https://bahdev223.github.io/anwkalan-app/apercu-partage.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Anw Kalan — application Android">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Anw Kalan — Application Android">
+<meta name="twitter:description" content="Cours, révisions et N'kalan sur votre téléphone. Les leçons téléchargées s'ouvrent sans connexion.">
+<meta name="twitter:image" content="https://bahdev223.github.io/anwkalan-app/apercu-partage.png">
+
+<link rel="icon" href="logo.png" type="image/png">
+<meta name="theme-color" content="#081a3a">
+
+<style>
+  :root{--navy:#081a3a;--blue:#0969da;--amber:#f5a524;--ink:#10213e;--muted:#52647d;--line:#dce5ef;--paper:#f5f8fc}
+  *{box-sizing:border-box}
+  body{margin:0;font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--paper)}
+  .hero{background:linear-gradient(160deg,var(--navy),#0d2e63 60%,var(--blue));color:#fff;padding:56px 20px 64px;text-align:center}
+  .hero img{width:104px;height:104px}
+  h1{margin:18px 0 6px;font-size:clamp(30px,7vw,44px);letter-spacing:-.5px}
+  .lead{margin:0 auto;max-width:34rem;font-size:clamp(16px,4vw,19px);color:#c6d8f0}
+  .wrap{max-width:44rem;margin:0 auto;padding:0 20px 64px}
+  .card{margin-top:-34px;background:#fff;border:1px solid var(--line);border-radius:20px;padding:26px 22px;box-shadow:0 10px 34px rgba(8,26,58,.11)}
+  .dl{display:flex;align-items:center;justify-content:center;gap:10px;min-height:60px;width:100%;
+      background:var(--amber);color:var(--navy);text-decoration:none;font-weight:800;font-size:18px;border-radius:999px}
+  .dl:hover{filter:brightness(.96)}
+  .meta{margin:12px 0 0;text-align:center;color:var(--muted);font-size:14px}
+  h2{margin:34px 0 12px;font-size:20px}
+  ol{margin:0;padding-left:0;list-style:none;counter-reset:etape}
+  li{counter-increment:etape;position:relative;padding:0 0 16px 46px}
+  li::before{content:counter(etape);position:absolute;left:0;top:-2px;display:flex;align-items:center;justify-content:center;
+             width:30px;height:30px;border-radius:50%;background:var(--blue);color:#fff;font-weight:800;font-size:15px}
+  .note{margin-top:26px;border-left:3px solid var(--amber);background:#fff8ea;padding:13px 16px;border-radius:0 12px 12px 0;color:#5b4413}
+  footer{border-top:1px solid var(--line);padding:26px 20px 40px;text-align:center;color:var(--muted);font-size:14px}
+  footer a{color:var(--blue)}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <img src="logo.png" alt="" width="104" height="104">
+  <h1>Anw Kalan</h1>
+  <p class="lead">Cours, révisions et N&rsquo;kalan sur votre téléphone.
+  Les leçons téléchargées s&rsquo;ouvrent sans connexion.</p>
+</div>
+
+<div class="wrap">
+  <div class="card">
+    <!-- L'adresse vise `releases/latest/` : elle sert toujours la dernière
+         version publiée. Un lien figé sur un numéro continuerait de
+         distribuer une vieille version des mois plus tard, sans casser —
+         il vieillirait, et personne ne s'en apercevrait. -->
+    <a class="dl" href="https://github.com/bahdev223/anwkalan-app/releases/latest/download/anwkalan.apk">
+      Télécharger l&rsquo;application
+    </a>
+    <!-- Le poids est annoncé avant le clic : sur une connexion facturée au
+         mégaoctet, l'apprendre après coûte de l'argent. -->
+    <p class="meta">Environ 36 Mo &middot; Android 7.0 ou plus récent &middot; Gratuit</p>
+  </div>
+
+  <h2>Installation</h2>
+  <ol>
+    <li>Touchez le bouton ci-dessus. Le téléchargement démarre.</li>
+    <!-- Cet avertissement d'Android surprend et fait renoncer. Le prévoir
+         ici évite qu'il soit pris pour un blocage. -->
+    <li>Android demandera d&rsquo;autoriser l&rsquo;installation depuis cette source.
+        C&rsquo;est normal pour une application distribuée hors du Play Store&nbsp;: acceptez.</li>
+    <li>Ouvrez le fichier téléchargé, puis connectez-vous avec votre compte.</li>
+  </ol>
+
+  <div class="note">
+    <strong>Version de test.</strong> Cette application est en cours de
+    développement. Si quelque chose ne fonctionne pas, dites-le&nbsp;: c&rsquo;est
+    exactement ce que nous cherchons à savoir.
+  </div>
+</div>
+
+<footer>
+  <a href="https://anwkalan.com">anwkalan.com</a> &middot;
+  <a href="https://github.com/bahdev223/anwkalan-app/releases">Toutes les versions</a><br>
+  Anw Kalan &middot; Bamako, Mali
+</footer>
+
+</body>
+</html>
